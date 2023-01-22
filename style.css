@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    display: flex;
+}
+.todo-nav{
+    margin-block: 20px;
+    max-width: 400px;
+    background-color: rgb(0, 12, 31);
+    overflow: auto;
+    border-radius: 5px;
+}
+.todo-nav::-webkit-scrollbar{
+    border: 0;
+    width: 10px;
+    background-color: transparent;
+}
+.todo-nav::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.486);
+}
+.todo-nav > .add-tsk{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.add-tsk > input[type="text"]{
+    padding: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    border: solid 2px rgb(0, 102, 197);
+}
+.add-tsk > input[type="text"]::-webkit-input-placeholder{
+    font-style: italic;
+}
+.add-tsk > input[type="button"]{
+    padding: 10px;
+    border: 0px;
+    margin-inline-start: 10px;
+    background-color: rgb(0, 102, 197);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tasks{
+    padding: 10px;
+}
+.tasks > p{
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.726);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-block-end: 10px;
+}
+/* .tasks > p > input[type="checkbox"]{
+    accent-color: rgb(0, 12, 31); 
+    margin-inline-end: 10px;
+} */
+.tasks > p::first-letter{
+    text-transform: uppercase;
+}
+.tasks > p:nth-child(even){
+    margin-block-end: 10px;
+    background-color: rgba(128, 243, 189, 0.726);
+}
+.tasks > p > button{
+    border: 0px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 5px;
+    background-color: rgb(179, 49, 49);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10;
+}
+
+
